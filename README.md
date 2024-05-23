@@ -1,6 +1,6 @@
 # Foundry Fund Me
 
-Advanced FundMe smart contract.
+This is a crowd sourcing app!
 
 - [Foundry Fund Me](#foundry-fund-me)
 - [Getting Started](#getting-started)
