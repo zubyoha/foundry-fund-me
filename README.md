@@ -16,8 +16,6 @@ Advanced FundMe smart contract.
     - [Withdraw](#withdraw)
   - [Estimate gas](#estimate-gas)
 - [Formatting](#formatting)
-- [My Public Wallet Address!](#my-public-wallet-address)
-
 
 # Getting Started
 
@@ -27,7 +25,6 @@ Advanced FundMe smart contract.
   - You'll know you did it right if you can run `git --version` and you see a response like `git version x.x.x`
 - [foundry](https://getfoundry.sh/)
   - You'll know you did it right if you can run `forge --version` and you see a response like `forge 0.2.0 (816e00b 2023-03-16T00:05:26.396218Z)`
-
 
 ## Quickstart
 
@@ -53,26 +50,23 @@ forge script script/DeployFundMe.s.sol
 
 ## Testing
 
-We talk about 4 test tiers in the video. 
+We talk about 4 test tiers in the video.
 
 1. Unit
 2. Integration
 3. Forked
 4. Staging
 
-This repo we cover #1 and #3. 
-
-
 ```
 forge test
 ```
 
-or 
+or
 
 ```
 // Only run test functions matching the specified regex pattern.
 
-"forge test -m testFunctionName" is deprecated. Please use 
+"forge test -m testFunctionName" is deprecated. Please use
 
 forge test --match-test testFunctionName
 ```
@@ -88,7 +82,6 @@ forge test --fork-url $SEPOLIA_RPC_URL
 ```
 forge coverage
 ```
-
 
 # Deployment to a testnet or mainnet
 
@@ -114,15 +107,16 @@ forge script script/DeployFundMe.s.sol --rpc-url $SEPOLIA_RPC_URL --private-key 
 
 ## Scripts
 
-After deploying to a testnet or local net, you can run the scripts. 
+After deploying to a testnet or local net, you can run the scripts.
 
-Using cast deployed locally example: 
+Using cast deployed locally example:
 
 ```
 cast send <FUNDME_CONTRACT_ADDRESS> "fund()" --value 0.1ether --private-key <PRIVATE_KEY>
 ```
 
 or
+
 ```
 forge script script/Interactions.s.sol:FundFundMe --rpc-url sepolia  --private-key $PRIVATE_KEY  --broadcast
 forge script script/Interactions.s.sol:WithdrawFundMe --rpc-url sepolia  --private-key $PRIVATE_KEY  --broadcast
@@ -144,24 +138,10 @@ forge snapshot
 
 And you'll see an output file called `.gas-snapshot`
 
-
 # Formatting
 
-
 To run code formatting:
+
 ```
 forge fmt
 ```
-
-
-# My Public Wallet Address!
-
-Building and Investing On-Chain!
-
-ETH/Arbitrum/Optimism/Polygon/etc Address: 0x7EAEC9b5B64A7F97daD7f1C1e2065547F376d548
-
-[![zubyoha Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/zubyoha)
-[![zubyoha Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zubyoha/)
-
-
-<!-- Testing krunchdata https://kdta.io/b6T40  -->
