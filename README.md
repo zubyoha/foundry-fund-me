@@ -1,12 +1,10 @@
 # Foundry Fund Me
 
-This is a crowd sourcing app!
-
+Fund-Me-App!
+  
 - [Foundry Fund Me](#foundry-fund-me)
-- [Getting Started](#getting-started)
   - [Requirements](#requirements)
-  - [Quickstart](#quickstart)
-    - [Optional Gitpod](#optional-gitpod)
+  - [Install](#install)
 - [Usage](#usage)
   - [Deploy](#deploy)
   - [Testing](#testing)
@@ -17,7 +15,8 @@ This is a crowd sourcing app!
   - [Estimate gas](#estimate-gas)
 - [Formatting](#formatting)
 
-# Getting Started
+<details>
+<summary>Getting Started</summary>
 
 ## Requirements
 
@@ -26,19 +25,13 @@ This is a crowd sourcing app!
 - [foundry](https://getfoundry.sh/)
   - You'll know you did it right if you can run `forge --version` and you see a response like `forge 0.2.0 (816e00b 2023-03-16T00:05:26.396218Z)`
 
-## Quickstart
+## Install
 
 ```
 git clone https://github.com/zubyoha/foundry-fund-me
-cd foundry-fund-me-f23
+cd foundry-fund-me
 forge build
 ```
-
-### Optional Gitpod
-
-If you can't or don't want to run and install locally, you can work with this repo in Gitpod. If you do this, you can skip the `clone this repo` part.
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/zubyoha/foundry-fund-me)
 
 # Usage
 
@@ -49,8 +42,6 @@ forge script script/DeployFundMe.s.sol
 ```
 
 ## Testing
-
-We talk about 4 test tiers in the video.
 
 1. Unit
 2. Integration
@@ -145,3 +136,4 @@ To run code formatting:
 ```
 forge fmt
 ```
+</details>
